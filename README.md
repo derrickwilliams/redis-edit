@@ -1,3 +1,6 @@
+1. Put some xml files in the ./seeds directory
+2. then...
+
 ```sh
 npm install
 docker-compose up
