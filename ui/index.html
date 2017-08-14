@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RedisEdit</title>
+  <link rel="stylesheet" href="/assets/codemirror/lib/codemirror.css" />
+  <link rel="stylesheet" href="/assets/codemirror/theme/dracula.css" />
+  <link rel="stylesheet" href="/assets/codemirror/addon/fold/foldgutter.css" />
+  <link rel="stylesheet" href="/ui/assets/re.css">
+</head>
+<body>
+  <select id="key-list"></select>
+  <button id="load-entry">Load Entry</button>
+  <hr />
+  <div class="editor-button-panel">
+    <!-- <button id="revert-btn">Revert</button> -->
+    <button id="save-btn">Save</button>
+  </div>
+
+  <textarea id="editor-box"></textarea>
+
+  <script src="/assets/verge/verge.min.js"></script>
+  <script src="/assets/codemirror/lib/codemirror.js"></script>
+  <script src="/assets/codemirror/addon/hint/xml-hint.js"></script>
+  <script src="/assets/codemirror/addon/fold/foldcode.js"></script>
+  <script src="/assets/codemirror/addon/fold/foldgutter.js"></script>
+  <script src="/assets/codemirror/addon/fold/xml-fold.js"></script>
+  <script src="/assets/codemirror/addon/fold/comment-fold.js"></script>
+  <script src="/assets/codemirror/addon/edit/matchtags.js"></script>
+  <script src="/assets/codemirror/addon/merge/merge.js"></script>
+  <script src="/assets/codemirror/mode/xml/xml.js"></script>
+  <script src="/ui/assets/re.js"></script>
+  <script> window.onload = reBootstrap; </script>
+</body>
+</html>

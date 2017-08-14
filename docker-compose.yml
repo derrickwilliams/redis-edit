@@ -1,0 +1,14 @@
+version: "3"
+services:
+  uiapp:
+    build: ./
+    ports:
+      - "5555:5555"
+    volumes:
+      - "${PWD}/ui:/go/src/github.com/derrickwilliams/redis-edit/ui"
+      - "${PWD}/node_modules:/go/src/github.com/derrickwilliams/redis-edit/node_modules"
+
+  cache:
+    image: redis
+    expose:
+      - "6379"

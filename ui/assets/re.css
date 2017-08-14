@@ -1,0 +1,11 @@
+div.editor-button-panel {
+  margin-bottom: 10px;
+}
+
+div.CodeMirror {
+  height: 600px;
+}
+
+.CodeMirror pre {
+  font-size: larger;
+}
